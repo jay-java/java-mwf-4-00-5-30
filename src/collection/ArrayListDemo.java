@@ -13,6 +13,7 @@ public class ArrayListDemo {
 		list.add(false);
 		list.add(12.3);
 		list.add("name2");
+		list.add(1);
 		list.remove(6);
 		System.out.println(list);
 		System.out.println("size of list : "+list.size());
