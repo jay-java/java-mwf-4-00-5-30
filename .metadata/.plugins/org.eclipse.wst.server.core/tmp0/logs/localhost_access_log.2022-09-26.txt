@@ -1,0 +1,16 @@
+127.0.0.1 - - [26/Sep/2022:17:21:00 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:01 +0530] "GET /BootieProject/index.jsp HTTP/1.1" 200 32056
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:01 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:04 +0530] "GET /BootieProject/seller-login.jsp HTTP/1.1" 200 13505
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:07 +0530] "GET /BootieProject/customer-login.jsp HTTP/1.1" 200 13340
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "POST /BootieProject/CustomerController HTTP/1.1" 200 15896
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "GET /BootieProject/IMAGE/running.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "GET /BootieProject/IMAGE/shoes.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "GET /BootieProject/IMAGE/watch.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "GET /BootieProject/IMAGE/formal%20shoes.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:12 +0530] "GET /BootieProject/IMAGE/37005-gift-card.mp4 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:48 +0530] "POST /BootieProject/WishListController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:48 +0530] "GET /BootieProject/customer-index.jsp HTTP/1.1" 200 15964
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:21:50 +0530] "GET /BootieProject/wishlist.jsp HTTP/1.1" 200 128
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:29:59 +0530] "GET /BootieProject/index.jsp HTTP/1.1" 200 32056
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:17:30:03 +0530] "GET /BootieProject/seller-registration.jsp HTTP/1.1" 200 10057

@@ -1,0 +1,17 @@
+package dao;
+
+import java.sql.Connection;
+
+import connection.DBConnection;
+import model.WishList;
+
+public class WishListDao {
+	public static void insertWishLIst(WishList w) {
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql="insert into wishlist(cusid,pid) values(?,?)"
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
