@@ -1,8 +1,0 @@
-package model;
-
-public class WishList {
-	private int wid,cusid,pid;
-	private String pname,image,pcategory;
-	private double pprice;
-	
-}

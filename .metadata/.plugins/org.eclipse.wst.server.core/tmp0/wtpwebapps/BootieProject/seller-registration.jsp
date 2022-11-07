@@ -24,6 +24,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	function hideURLbar() {
 		window.scrollTo(0, 1);
 	}
+	
+	
+	function check_name(){
+		var f = document.form.name.value;
+		var reg = /^[A-Za-z]+$/;
+		if(f.trim()==""){
+			document.getElementById("errorname").innerHTML="Please enter your Name";
+		}
+		else if(!reg.test(f)){
+			document.getElementById("errorname").innerHTML="Please enter only Alphabet";
+			
+		}else{
+			document.getElementById("errorname").innerHTML="";
+		}
+	}
+	
+	
 </script>
 <!-- //Meta tag Keywords -->
 
@@ -47,6 +64,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+
+<script>  
+var request=new XMLHttpRequest();  
+function searchInfo()
+{  
+	var name=document.form.email.value;  
+	var url="AjaxSearch2.jsp?val="+name;  
+  	try
+  	{  
+		request.onreadystatechange=function()
+		{  
+			if(request.readyState==4)
+			{  
+				var val=request.responseText;  
+				document.getElementById('tops').innerHTML=val;  
+			}  
+		}  
+		request.open("GET",url,true);  
+		request.send();  
+	}
+  	catch(e)
+  	{
+  		alert("Unable to connect to server");
+  	}  
+}  
+</script>  
+
 
 	<!-- mian-content -->
 	<div class="main-banner inner" id="home">
@@ -110,12 +154,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<span class="sub-tittle"></span>Seller Register
 			</h3>
 			<div class="row contact-main-info mt-5">
-				<div class="col-md-12 contact-right-content">
-					<form action="SellerController" method="post">
-						<input type="text" name="name" placeholder="Name" required="">
+				<div class="col-md-6 contact-right-content">
+					<form action="SellerController" method="post" name="form">
+						<input type="text" name="name" onblur="check_name();" placeholder="Name" required="">
+						<span id="errorname" style="color:red;"></span>
 						<input type="text" name="contact" placeholder="Contact"	required=""> 
 							<input type="text" name="address" placeholder="Address" required=""> 
-							<input type="email" name="email" placeholder="Email" required=""> 
+							<input type="email" name="email" onblur="searchInfo()" placeholder="Email" required=""> 
+								<span id="tops" style="color:red;"></span>
 							<input type="text" name="password" placeholder="Password" required="">
 						<div class="text-center mt-3">
 							<input type="submit" name="action" value="register">

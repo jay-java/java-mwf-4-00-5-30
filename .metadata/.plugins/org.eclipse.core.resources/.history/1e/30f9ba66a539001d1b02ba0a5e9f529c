@@ -1,9 +1,0 @@
-package dao;
-
-import model.WishList;
-
-public class WishListDao {
-	public static void insertWishLIst(WishList w) {
-		
-	}
-}
