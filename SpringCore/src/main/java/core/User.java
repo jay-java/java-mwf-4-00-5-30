@@ -8,18 +8,21 @@ public class User {
 		return id;
 	}
 	public void setId(int id) {
+		System.out.println("setting id");
 		this.id = id;
 	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
+		System.out.println("setting name");
 		this.name = name;
 	}
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
+		System.out.println("settting address");
 		this.address = address;
 	}
 	@Override

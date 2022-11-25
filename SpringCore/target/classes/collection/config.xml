@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean class="collection.Person" name="p1">
+		<property name="id" value="1"/>
+		<property name="name" value="xyz"/>	
+		<property name="moNO">
+			<list>
+				<value>12345436</value>
+				<value>2365672345</value>
+				<value>2353465</value>
+			</list>
+		</property>
+		<property name="acc">
+			<set>
+				<value>1222</value>
+				<value>1222</value>
+				<value>1222</value>
+				<value>1222</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="c" value="1000"/>
+				<entry key="c++" value="2000"/>
+				<entry key="java" value="4000"/>
+				<entry key="c#" value="4000"/>
+			</map>
+		</property>
+	</bean>
+	
+	</beans>
